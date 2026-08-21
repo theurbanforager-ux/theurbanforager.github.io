@@ -14,6 +14,8 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
   const body = encodeURIComponent(
     `Name: ${data.get('name')}\nPhone: ${data.get('phone')}\nService: ${data.get('service')}\n\nMessage:\n${data.get('message') || ''}`
   );
-  // Replace this email with the business email once one is available.
+  <a href="mailto:theurbanforagerofficial@gmail.com">
+  theurbanforagerofficial@gmail.com
+</a>
   window.location.href = `mailto:?subject=${subject}&body=${body}`;
 });
